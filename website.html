@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* --- Global Styles --- */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: none; /* clean top, no blue */
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #9bb300;
+    }
+
+    header h1 {
+      margin: 15px 0 5px;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* Navigation */
+    nav {
+      background: #0056b3;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: #0056b3;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Contact form */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input, form textarea {
+      margin-bottom: 12px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: #0056b3;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: #003f8a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+
+
+<style>
+
+footer {
+
+text-align: center;
+
+padding: 20px;
+
+font-size: 0.9rem;
+
+color: #666;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header>
+
+<h1>WELCOME TO MY PORTFOLIO</h1>
+<img src="../bhagiii.jpg" alt="my photo">
+<h2>Hello, I'm <span>Bhargavi.Barri</span></h2>
+<p>Aspiring Web Developer | Tech Enthusiast</p>
+
+</header>
+  
+  <nav>
+    <ul>
+      
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm currently Pursuing my BTEC in "VIJAYA INSTITUTE OF TECHNOLOGY FOR WOMEN" in the field of Information Technology.</p>
+    
+      <p> I’m a passionate learner with skills in web development and problem-solving. I enjoy creating modern websites and applications.</p>
+      <p>My goal is to grow as a software engineer while contributing to innovative projects</p>
+  </section>
+
+  <!-- Education -->
+<section id="education">
+        <h2>Education</h2>
+        <ul>
+        
+            <li><strong>B.Tech in Information Technology</strong>, 2022–2026 (CGPA: 8.10)<br>
+                Vijaya Institute of Technology for Women, Andhra Pradesh</li>
+            <li><strong>Intermediate (MPC)</strong>, 2020–2022 (82.1%)<br>
+                Sri Chaitanya Junior College</li>
+            <li><strong>SSC</strong>, 2020 (97%)<br>
+               Golden Rule(E.M) High School</li>
+        </ul>
+    </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li> Basics of HTML, CSS, JavaScript</li>
+      <li> Basics of Python Programming</li>
+      <li>Basics of C</li>
+      <li>Microsoft Excel and Word</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Personal Portfolio Website</li>
+      <li>Mini project of college website</li>
+      
+    </ul>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <ul>
+      <ol start="1"type="1">
+            <li>Programming Fundamentals using Python – Infosys Springboard</li>
+            <li>Cisco Networking Academy Certifications</li>
+            <li>TCS iON – Career Edge by TCS iON</li>
+            <li>Hp Life Certifications</li>
+            <li>Eduskills Certifications</li></ol>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Bhargavi....!</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+          .scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Fake contact form submit
+    function sendMessage(event) {
+      event.preventDefault();
+      alert("Thank you! Your message has been sent.");
+    }
+  </script>
+</body>
+</html>
